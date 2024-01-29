@@ -1,4 +1,4 @@
-/* App.css */
+
 
 * {
   box-sizing: border-box;
@@ -120,7 +120,7 @@ li:hover {
   margin-top: 20px;
   padding: 20px;
   background-color: #fff;
-  color: #000; /* Set text color to black in light mode */
+  color: #000; 
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
