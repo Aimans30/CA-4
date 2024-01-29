@@ -8,7 +8,7 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [highlightedColor, setHighlightedColor] = useState(null); // Change the initial value to null
+  const [highlightedColor, setHighlightedColor] = useState(null); 
 
   const handleOptionSelect = (selectedOption) => {
     console.log(`Selected option: ${selectedOption.text}`);
@@ -27,11 +27,11 @@ function App() {
   const handleRestart = () => {
     setCurrentQuestion(0);
     setScore(0);
-    setHighlightedColor(null); // Change the value to null when restarting
+    setHighlightedColor(null); 
   };
 
   const handleHighlightQuestion = () => {
-    const newColor = highlightedColor === null ? '#FFD700' : null; // Toggle between null and your desired color
+    const newColor = highlightedColor === null ? '#FFD700' : null; 
     setHighlightedColor(newColor);
   };
 
@@ -64,7 +64,7 @@ function App() {
 
       {/* Conditional rendering based on whether there are more questions or not */}
       {currentQuestion < questions.length ? (
-        // If there are more questions, render QuestionBox
+        
         <QuestionBox
           question={questions[currentQuestion]}
           options={questions[currentQuestion].options}
@@ -72,7 +72,7 @@ function App() {
           highlightedColor={highlightedColor}
         />
       ) : (
-        // If there are no more questions, render Result component and Restart button
+        
         <div>
           <Result score={score} totalQuestions={questions.length} />
           <button onClick={handleRestart}>Restart Quiz</button>
