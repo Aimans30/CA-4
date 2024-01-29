@@ -1,0 +1,139 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  background: url('./Bg.png') center/cover no-repeat;
+  height: 700px;
+}
+
+.dark-mode {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-middle {
+  font-size: 1.5rem;
+}
+
+.container {
+  text-align: center;
+  width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4fa3d1;
+}
+
+.highlight-button {
+  background-color: #4fa3d1;
+  color: #fff;
+}
+
+.dark-mode-button {
+  background-color: #666;
+  color: #fff;
+}
+
+.question-box {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  height: 360px;
+  overflow: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+ul.options {
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+li:hover {
+  background-color: #4fa3d1;
+  border-color: #4fa3d1;
+  color: #fff;
+}
+
+.dark-mode li {
+  background-color: #666;
+  color: #fff;
+}
+
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000; /* Set text color to black in light mode */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .question-box {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .result-container {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-color: #ccc;
+}
